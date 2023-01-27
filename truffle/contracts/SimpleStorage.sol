@@ -2,13 +2,13 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 contract SimpleStorage {
-  uint256 value;
+  string ipfsHash;
 
-  function read() public view returns (uint256) {
-    return value;
+  function read() public view returns (string memory) {
+    return ipfsHash;
   }
 
-  function write(uint256 newValue) public {
-    value = newValue;
+  function write(string memory newValue) public {
+    ipfsHash = newValue;
   }
 }
